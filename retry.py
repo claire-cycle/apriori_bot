@@ -40,5 +40,7 @@ def retry(max_tries=3, delay_seconds=1, backoff=2, exceptions=(Exception,)):
                     log_retry(f"错误信息: {str(e)}", "WARN")
                     time.sleep(sleep_time)
                     mdelay *= backoff
+            return None
+
         return wrapper
     return decorator

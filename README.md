@@ -53,6 +53,7 @@ pip install requests web3 eth-account python-dotenv
 
 1. 复制`.env.example`文件为`.env`
 2. 编辑`.env`文件，填入你的钱包地址和私钥
+3. 请注意你钱包地址的大小写
 
 ```
 WALLET_ADDRESS=你的钱包地址
@@ -291,6 +292,7 @@ options:
 如果遇到类似以下错误：
 
 ```
+问题1
 [2025-08-08 21:40:12] [ERROR] 登录请求时发生网络错误: HTTPSConnectionPool(host='wallet-collection-api.apr.io', port=443): Max retries exceeded with url: /auth/login (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1010)')))```
 
 可能的原因：
@@ -316,3 +318,8 @@ options:
 - 详细的错误信息
 
 这些信息对于排查API相关问题非常有帮助。
+
+
+问题2
+错误响应内容: f"message":"You can only check in with your primary wallet or related wallets" "error":"forbiden","statuscode":403}
+请注意你钱包地址的大小写

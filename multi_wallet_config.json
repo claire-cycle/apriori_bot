@@ -1,0 +1,32 @@
+{
+  "network": {
+    "monad_rpc": "https://rpc.ankr.com/monad_testnet",
+    "chain_id": 10143
+  },
+  "contract": {
+    "address": "0x703e753e9a2aca1194ded65833eaec17dcfeac1b",
+    "method": "0x183ff085"
+  },
+  "settings": {
+    "verbose": false,
+    "threads": 3,
+    "delay": 5
+  },
+  "wallets": [
+    {
+      "address": "0x钱包地址1",
+      "private_key": "钱包私钥1",
+      "proxy": "http://用户名:密码@代理服务器:端口"
+    },
+    {
+      "address": "0x钱包地址2",
+      "private_key": "钱包私钥2",
+      "proxy": "http://127.0.0.1:7890"
+    },
+    {
+      "address": "0x钱包地址3",
+      "private_key": "钱包私钥3",
+      "proxy": null
+    }
+  ]
+}
